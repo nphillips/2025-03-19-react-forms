@@ -1,4 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +49,47 @@
 
 .read-the-docs {
   color: #888;
+}
+
+form {
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+}
+form input {
+  width: 100%;
+}
+form label {
+  display: flex;
+  justify-content: start;
+}
+form label span {
+  flex: 0 0 100px;
+}
+form .button-area {
+  text-align: center;
+}
+.form-area {
+  padding: 1.5rem;
+  max-width: 400px;
+  border: 2px solid rgba(100, 100, 100, 0.5);
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-area > *:first-child {
+  margin-top: 0;
+}
+.form-area > *:last-child {
+  margin-bottom: 0;
+}
+.input-error {
+  border: 1px solid red;
+  border-radius: 0.125rem;
+}
+
+.sign-up-error-message {
+  text-align: center;
+  font-size: 0.875rem;
 }
